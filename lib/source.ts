@@ -65,9 +65,10 @@ export const source = {
     }
     
     const slug = slugParam[0]
-    let page = readDocFile(`${slug}.md`)
+    // Try .mdx first (more common), then .md
+    let page = readDocFile(`${slug}.mdx`)
     if (!page) {
-      page = readDocFile(`${slug}.mdx`)
+      page = readDocFile(`${slug}.md`)
     }
     return page
   },

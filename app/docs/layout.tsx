@@ -135,14 +135,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
         ),
       }}
-      links={[
-        {
-          text: 'GitHub',
-          url: DOCS_CONFIG.github,
-          icon: <Github className="size-4" />,
-          external: true,
-        },
-      ]}
+
     >
       {children}
     </DocsLayout>

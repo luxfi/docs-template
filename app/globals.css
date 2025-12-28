@@ -1,6 +1,6 @@
 /**
  * Lux Network Documentation Theme
- * True black dark mode with minimal light mode
+ * Base template for all Lux documentation sites
  */
 
 @import 'tailwindcss';
@@ -170,8 +170,7 @@ aside[role="complementary"] {
   border-right: 1px solid hsl(var(--border) / 0.5);
 }
 
-/* Hide mobile subnav header on desktop - sidebar has all navigation */
-/* The subnav should only show on mobile but Tailwind md:hidden not working */
+/* Hide mobile subnav header on desktop */
 @media (min-width: 768px) {
   header#nd-subnav {
     display: none !important;

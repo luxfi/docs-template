@@ -74,10 +74,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (prefersDark) {
-                  document.documentElement.classList.add('dark');
-                }
+                document.documentElement.classList.add('dark');
               })();
             `,
           }}
@@ -87,7 +84,7 @@ export default function RootLayout({
         <RootProvider
           theme={{
             enabled: true,
-            defaultTheme: 'system',
+            defaultTheme: 'dark',
           }}
         >
           <div className="relative flex min-h-screen flex-col">
