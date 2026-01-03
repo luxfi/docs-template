@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
-import { RootProvider } from 'fumadocs-ui/provider'
+import { RootProvider } from '@hanzo/docs/ui/provider/next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import 'fumadocs-ui/style.css'
+import '@hanzo/docs/ui/css/neutral.css'
 import './globals.css'
 
 const geist = Geist({
